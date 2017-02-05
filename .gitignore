@@ -1,0 +1,20 @@
+# All release folders and files
+releases/*
+!releases/.gitkeep
+
+# All release folders and files
+deployed-releases/*
+!deployed-releases/.gitkeep
+
+# Files folder
+sites/*
+!sites/.gitkeep
+
+# Symlinks
+/config
+/web
+/vendor
+
+# dependencies
+/node_modules
+/bower_components
