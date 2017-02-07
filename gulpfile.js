@@ -17,6 +17,7 @@ gulp.task('deploy', () => {
     if(fs.existsSync(`releases/${args.name}.zip`)){
       // we unzip the release
       console.log(cp.execSync(`cd releases; unzip ${args.name}.zip -d ../deployed-releases`));
+      console.log(cp.execSync(`chmod 0775 deployed-releases/${args.name}/config/sync`));
       console.log(`Release "${args.name}" deployed`)
     }
   } else {
