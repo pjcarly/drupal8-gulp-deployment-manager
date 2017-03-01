@@ -66,6 +66,7 @@ gulp.task('publish', () => {
     console.log(cp.execSync(`ln -s ${root}/deployed-releases/${args.name}/vendor ${root}/vendor`));
     console.log(cp.execSync(`ln -s ${root}/deployed-releases/${args.name}/web ${root}/web`));
     console.log(cp.execSync(`ln -s ${root}/sites ${root}/deployed-releases/${args.name}/web/sites`));
+    console.log(cp.execSync(`ln -s ${root}/.well-known ${root}/deployed-releases/${args.name}/web/.well-known`));
   } else {
     console.log('Parameter --name is required');
   }

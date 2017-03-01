@@ -6,6 +6,10 @@ releases/*
 deployed-releases/*
 !deployed-releases/.gitkeep
 
+# Lets Encrypt
+.well-known/*
+!.well-known/.gitkeep
+
 # Files folder
 sites/*
 !sites/.gitkeep
